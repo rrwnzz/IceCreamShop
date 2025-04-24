@@ -1,0 +1,170 @@
+#navBar{
+    display: flex;
+    background-color: aliceblue;
+}
+.logo{
+    margin-top: 20px;
+    /*  نزلت لوغو لتحت على مستوى الازرار*/
+    width:75px;
+    height:75px;
+}
+#navBar>ul{
+    list-style: none;
+    display: flex; 
+    /* اخلي الازرار جنب بعض */
+    align-items: center;  
+    /* انزل الازرار لتحت */
+    margin-left: 180px;  
+    /* اعمل مساحه بين الازرار و اللوغو */
+}
+#navBar>ul>li{
+    margin:40px; 
+    /* اعمل مساحه بين الازرار نفسهم */
+    font-size: 20px;
+}
+#navBar>ul>li:hover{
+    background-color: pink;
+}
+#navBar>ul>li>a{
+    text-decoration: none;
+    color: grey;
+}
+#icons{
+    display: flex;
+    align-items:center;
+    /* حتى انزل القلب والعربايه لتحت لازم مع الالين ايتيمز يكون في ديسبلي فليكس */
+    margin-left: 300px;
+    /* اعمل مساحه بين القلب والعربايه والازرار */
+}
+#icons>i{
+    margin: 10px;
+}
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* to center the div */
+}
+#rightMain>h1>span{
+    color: plum;
+}
+#rightMain>button{
+    padding: 10px 20px;
+    background-color: plum;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+#rightMain>p{
+    color: plum;
+    font-size: 20px;
+}
+.logo2{
+    border-radius: 100%;
+}
+#rightMain{
+    width: 600px;
+    /* حتى ازبط الكلام وما يكون ماخد مساحه كبيره */
+}
+#leftMain{
+    margin-top: 10px;
+}
+.yummyimage{
+    position: relative;
+}
+.yummytext{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    background-color: white;
+    border: 2px solid plum;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+}
+#ingredient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;;
+    margin-top: 50px; 
+     /*انزل الديف لتحت  */
+}
+.items{
+    padding: 40px;   
+    /* ازيد المساحه بين محتوى الديف وحدوده */
+    text-align: center; 
+    /* اوسط الصور والكلام داخل الديف */
+}
+.items>h1{
+    font-size: 36px;
+    color:black;
+    background-color: plum;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.types{
+    display: flex;
+}
+.type{
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;  
+    width: 180px; 
+    margin: 10px;
+}
+.type>img{
+    border-radius: 100%;
+}
+.type>p{
+    margin-bottom: 10px;
+}
+.type:hover{
+    background-color: plum;
+}
+
+#footer{
+    display: flex;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+.LeftFooter>ul{
+    list-style: none;
+}
+.LeftFooter>ul>li{
+    font-size: 18px;
+    color: grey;
+}
+.LeftFooter{
+    margin-left: 200px;
+}
+.social{
+    display: flex;
+    background-color: aliceblue;
+    position: relative;
+}
+.socialIcon{
+    display: flex;
+    
+}
+.greyscreen{
+    background-color: lightgray;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.copyright{
+    position: absolute;
+    left: 45%;
+    color: grey;
+}
+
