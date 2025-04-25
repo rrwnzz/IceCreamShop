@@ -1,0 +1,78 @@
+#flavors{ 
+    text-align: center; 
+}
+#flavors>h1{
+    font-size: 36px;
+    color:black;
+    background-color: plum;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.icecreams{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: repeat(6,auto);
+}
+.icecream>img{
+    border-radius: 100%;
+}
+.icecream>p>span{
+    background-color: white;
+    padding: 15px 15px; 
+    border: 2px solid plum;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.icecream{ 
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;   
+    width: 180px;  
+    margin: 10px; 
+    margin-left: 200px;
+    text-align: center;
+}
+.icecream:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+#size{
+    text-align: center;
+}
+#size>h1{
+    font-size: 36px;
+    color:black;
+    background-color: plum;
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.cupsCones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cupCone{
+
+}
+.cupCone{
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;   
+    /* width: 180px;  */
+    margin: 80px; 
+    /* margin-left: 200px; */
+}
+.cupCone:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
