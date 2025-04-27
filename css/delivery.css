@@ -1,0 +1,29 @@
+#delivery {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 100px;
+    gap: 50px; 
+    padding: 20px;
+  }
+  
+#rightDev>img {
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+  
+#leftDev>form {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+#leftDev input {
+    padding: 10px; 
+    border-radius: 8px;
+    border: 1px solid burlywood;
+}   
+button{
+    padding: 5px;
+    margin-top: 15px;
+    background-color: blanchedalmond;
+}

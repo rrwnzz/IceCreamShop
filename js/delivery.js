@@ -1,0 +1,22 @@
+var info = document.getElementById("info");
+
+info.addEventListener('click', function(event){
+    var name = document.getElementById("name").value; 
+    var phone = document.getElementById("phone").value;
+    var locationInput = document.getElementById("location").value;
+    // خزنت قيمة الانبوت اللي راح يدخله اليوزر داخل 3 متغيرات
+
+    // اخزن قيم الانبوت اللي دخلها اليوزر داخل اللوكال ستورج
+    localStorage.setItem("name", name);
+    localStorage.setItem("phone", phone);
+    localStorage.setItem("location", locationInput);
+
+    // Call the alert function to show the success message
+    alertMessage();
+});
+
+function alertMessage() {
+    alert("Your info has been saved successfully");
+}
+
+
