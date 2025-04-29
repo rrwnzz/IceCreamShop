@@ -17,10 +17,11 @@
     grid-template-columns: auto;
     gap: 10px;
 }
-#leftDev input {
-    padding: 10px; 
-    border-radius: 8px;
-    border: 1px solid burlywood;
+#leftDev>form>input {
+    padding: 12px 15px; 
+    border-radius: 10px; 
+    border: 2px solid whitesmoke; 
+    font-size: 16px;
 }   
 button{
     padding: 5px;

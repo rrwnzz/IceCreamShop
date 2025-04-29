@@ -1,6 +1,6 @@
 var info = document.getElementById("info");
 
-info.addEventListener('click', function(event){
+info.addEventListener('submit', function(event){
     var name = document.getElementById("name").value; 
     var phone = document.getElementById("phone").value;
     var locationInput = document.getElementById("location").value;
@@ -10,13 +10,9 @@ info.addEventListener('click', function(event){
     localStorage.setItem("name", name);
     localStorage.setItem("phone", phone);
     localStorage.setItem("location", locationInput);
-
-    // Call the alert function to show the success message
-    alertMessage();
+    alert("Your info has been saved successfully");
 });
 
-function alertMessage() {
-    alert("Your info has been saved successfully");
-}
+
 
 

@@ -1,0 +1,29 @@
+#loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px; 
+    gap: 80px;
+    background-color: white;
+    padding: 40px 60px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm > img {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+    padding: 20px; 
+    border-radius: 50%; 
+}
+
+#loginData {
+    display: grid; 
+    grid-template-columns: auto; 
+    gap: 20px; 
+}
+
+#loginData>input {
+    padding: 12px 15px; 
+    border-radius: 10px; 
+    border: 2px solid whitesmoke; 
+    font-size: 16px;
+}
