@@ -12,6 +12,7 @@ body {
 #rightLogin>img {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
 }
 #leftLogin>ul>li {
     list-style: none;

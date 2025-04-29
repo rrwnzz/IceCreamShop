@@ -1,6 +1,7 @@
 var info = document.getElementById("info");
 
 info.addEventListener('submit', function(event){
+    event.preventDefault();
     var name = document.getElementById("name").value; 
     var phone = document.getElementById("phone").value;
     var locationInput = document.getElementById("location").value;

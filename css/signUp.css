@@ -1,0 +1,31 @@
+#signUpForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 100px;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px 60px;
+}
+#signUpForm>img{
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+#singUpData{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+#singUpData>label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#singUpData>input{
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
+    font-size: 16px;
+}
+

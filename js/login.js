@@ -7,7 +7,8 @@ loginData.addEventListener('submit', function(event) {
 
     if (email === "rawan02almomani@gmail.com" && password === "12345") {
         window.location.href = "home.html"; 
-    } else {
+    } 
+    else {
         alert("Invalid email or password");
     }
 });
