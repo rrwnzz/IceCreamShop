@@ -1,44 +1,46 @@
-#navBar{
+#navBar {
     display: flex;
-    background-color: aliceblue;
+    align-items: center; 
+    justify-content: space-between; /* Space between items */
+    padding: 30px; /* Optional: adjust padding for better spacing */
 }
-.logo{
-    margin-top: 20px;
-    /*  نزلت لوغو لتحت على مستوى الازرار*/
-    width:75px;
-    height:75px;
-}
-#navBar>ul{
+
+#navBar > ul {
     list-style: none;
     display: flex; 
-    /* اخلي الازرار جنب بعض */
-    align-items: center;  
-    /* انزل الازرار لتحت */
-    margin-left: 180px;  
-    /* اعمل مساحه بين الازرار و اللوغو */
+    align-items: center;   
+    margin-left: 20px; 
+    /* Adjusted space between logo and menu */
 }
-#navBar>ul>li{
-    margin:40px; 
-    /* اعمل مساحه بين الازرار نفسهم */
+
+#navBar > ul > li {
+    margin: 0 20px; 
     font-size: 20px;
 }
-#navBar>ul>li:hover{
+
+#navBar > ul > li:hover {
     background-color: pink;
 }
-#navBar>ul>li>a{
+
+#navBar > ul > li > a {
     text-decoration: none;
     color: grey;
 }
-#icons{
-    display: flex;
-    align-items:center;
-    /* حتى انزل القلب والعربايه لتحت لازم مع الالين ايتيمز يكون في ديسبلي فليكس */
-    margin-left: 250px;
-    /* اعمل مساحه بين القلب والعربايه والازرار */
+
+.dropdown {
+    margin-left: 20px; /* Space between the menu and dropdown */
 }
-#icons>i{
+
+#icons {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Space between icons and the rest of the navbar */
+}
+
+#icons > i {
     margin: 10px;
 }
+
 #main{
     display: flex;
     justify-content: center;
@@ -59,8 +61,9 @@
     color: plum;
     font-size: 20px;
 }
-.logo2{
+.logo{
     border-radius: 100%;
+    width: 300px;
 }
 #rightMain{
     width: 600px;
@@ -78,7 +81,7 @@
     right: 200px;
     background-color: white;
     border: 2px solid plum;
-    padding: 12px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 15px;
@@ -100,7 +103,7 @@
 .items>h1{
     font-size: 36px;
     color:black;
-    background-color: plum;
+    background-color: plum; 
     padding: 15px 30px;
     border: 2px solid white;
     border-radius: 12px;
@@ -130,7 +133,6 @@
 
 #footer{
     display: flex;
-    background-color: aliceblue;
     margin-top: 20px;
 }
 .LeftFooter>ul{
@@ -145,7 +147,6 @@
 }
 .social{
     display: flex;
-    background-color: aliceblue;
     position: relative;
 }
 .socialIcon{
