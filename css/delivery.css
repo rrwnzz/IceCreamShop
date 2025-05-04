@@ -4,7 +4,6 @@
     align-items: center; 
     margin-top: 100px;
     gap: 50px; 
-    padding: 20px;
   }
   
 #rightDev>img {
@@ -14,7 +13,6 @@
   
 #leftDev>form {
     display: grid;
-    grid-template-columns: auto;
     gap: 10px;
 }
 #leftDev>form>input {
