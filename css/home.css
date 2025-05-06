@@ -150,4 +150,15 @@
     left: 45%;
     color: grey;
 }
+#mobileNav {
+    display: none;
+}
+@media screen and (max-width: 500px) {
+    .desktopMenu {
+        display: none;
+    }
 
+    #mobileNav {
+        display: block;
+    }
+}

@@ -9,30 +9,34 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <!-- nav Bar -->
     <div id="navBar">
         <img width="75px" src="https://i.pinimg.com/736x/8d/93/7e/8d937ee4b3cdf4283b5cbc5e486a2312.jpg">
-        <ul>
-            <li>
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="flavors.html">Flavors</a>
-            </li>
-            <li>
-                <a href="About.html">About Us</a>
-            </li>
-            <li>
-                <a href="delivery.html">Delivery</a>
-            </li>
+        <ul class="desktopMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="flavors.html">Flavors</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="delivery.html">Delivery</a></li>
         </ul>
+        <div id="mobileNav">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Home</a></li>
+                    <li><a class="dropdown-item" href="flavors.html">Flavors</a></li>
+                    <li><a class="dropdown-item" href="About.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="delivery.html">Delivery</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Themes
+                Themes
             </button>
             <ul class="dropdown-menu">
-              <li><button onclick="changeTheme('white')" class="dropdown-item" type="button">Light</button></li>
-              <li><button onclick="changeTheme('Black')" class="dropdown-item" type="button">Dark</button></li>
+                <li><button onclick="changeTheme('white')" class="dropdown-item" type="button">Light</button></li>
+                <li><button onclick="changeTheme('Black')" class="dropdown-item" type="button">Dark</button></li>
             </ul>
         </div>
         <div id="icons">
