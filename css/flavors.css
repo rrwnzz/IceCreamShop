@@ -8,13 +8,12 @@
     padding: 15px 30px;
     border: 2px solid white;
     border-radius: 12px;
-    margin-bottom: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .icecreams{
     display: grid;
     grid-template-columns: repeat(2,auto);
-    grid-template-rows: repeat(6,auto);
+    grid-template-rows: repeat(3,auto);
 }
 .icecream>img{
     border-radius: 100%;
@@ -28,17 +27,17 @@
 }
 
 .icecream{ 
-    background-color: #fff;
+    background-color: white;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     padding: 30px 20px;   
     width: 180px;  
-    margin: 10px; 
+    margin: 10px;
     margin-left: 200px;
-    text-align: center;
 }
 .icecream:hover {
-    transform: scale(1.05); /* Slight zoom-in */
+    transform: scale(1.05); 
+    /* Slight zoom-in */
     transition: all 0.3s ease-in-out; /* Smooth animation */
 }
 #size{
@@ -51,7 +50,6 @@
     padding: 15px 30px;
     border: 2px solid white;
     border-radius: 12px;
-    margin-bottom: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 .cupsCones{
@@ -60,16 +58,11 @@
   align-items: center;
 }
 .cupCone{
-
-}
-.cupCone{
-    background-color: #fff;
+    background-color: white;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     padding: 30px 20px;   
-    /* width: 180px;  */
-    margin: 80px; 
-    /* margin-left: 200px; */
+    margin: 80px;
 }
 .cupCone:hover {
     transform: scale(1.05); /* Slight zoom-in */

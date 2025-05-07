@@ -12,7 +12,6 @@
 #colorBackground{
     background-color: rgb(251, 211, 251);
     width: 320px;
-    height: auto; /* خليناه أوتو حتى يتوسع مع النص */
     border-radius: 30px;
     padding: 20px; /* مسافة داخلية حتى ما يلزق الكلام بالحواف */
     margin-left: 100px;
@@ -30,14 +29,49 @@
 }
 #Values{
     text-align: center;
-    padding: 80px 10%;
+    padding: 80px ;
     background-color: #faf3f8; 
-    margin-top: 10px;
 }
 #Values>h1{
     font-size: 40px;
     color: #c94f7c;
     margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chooseCards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.chooseCard {
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+}
+
+.chooseCard:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+    transition: all 0.3s ease-in-out; /* Smooth animation */
+}
+
+.chooseCard>i {
+    font-size: 40px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+.chooseCard>h3 {
+    font-size: 22px;
+    color: #6b2d5c;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.chooseCard>p {
+    font-size: 16px;
+    color: #555;
     font-family: 'Poppins', sans-serif;
 }
 #reviews{
@@ -76,7 +110,7 @@
 }
 #whyChooseUs {
     text-align: center;
-    padding: 80px 10%;
+    padding: 80px ;
     background-color: #faf3f8; /* soft very light pink */
     margin-top: 20px;
 }
@@ -88,40 +122,3 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.chooseCards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-
-.chooseCard {
-    background-color: white;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    padding: 30px 20px;
-    transition: transform 0.3s ease;
-}
-
-.chooseCard:hover {
-    transform: scale(1.05); /* Slight zoom-in */
-    transition: all 0.3s ease-in-out; /* Smooth animation */
-}
-
-.chooseCard>i {
-    font-size: 40px;
-    color: #ff69b4;
-    margin-bottom: 20px;
-}
-.chooseCard>h3 {
-    font-size: 22px;
-    color: #6b2d5c;
-    margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.chooseCard>p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-}
