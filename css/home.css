@@ -4,7 +4,6 @@
     align-items: center;
     padding: 10px 20px;
     background-color: white;
-    position: relative;
 }
 
 #navBar > img {
@@ -43,11 +42,13 @@
     .desktopMenu {
         display: none;
     }
-    
-    #mobileMenu{
+
+    .dropdown-item {
         display: block;
     }
+
 }
+
 #main{
     display: flex;
     justify-content: center;
