@@ -1,40 +1,61 @@
 #navBar {
-    display: flex; 
-    justify-content: space-between;  
-    align-items: center; 
-    padding: 30px; 
-    /* increase the size of navBar div */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
 }
 
-#navBar>ul {
+#navBar > img {
+    width: 75px;
+}
+
+.desktopMenu {
+    display: flex;
     list-style: none;
-    display: flex; 
 }
 
-#navBar>ul>li {
-    margin: 20px;  
-    /* space between list items */
-    font-size: 20px;
-}
-#navBar>ul>li:hover {
-    background-color:pink;
+.desktopMenu > li {
+    margin: 20px;
 }
 
-#navBar>ul>li>a {
+.desktopMenu > li:hover {
+    background-color: pink;
+    border-radius: 2px;
+}
+
+.desktopMenu > li > a {
     text-decoration: none;
     color: grey;
+    font-size: 20px;
 }
 
 #icons > i {
-    margin: 10px;
+    margin: 5px;
 }
 
+#mobileMenu {
+    display: none;
+}
+
+@media screen and (max-width: 468px) {
+    .desktopMenu {
+        display: none;
+    }
+    
+    #mobileMenu{
+        display: block;
+    }
+}
 #main{
     display: flex;
     justify-content: center;
     align-items: center;
     /* to center the div */
-}
+    flex-wrap: wrap; 
+    /* لما الشاشة تصغر والمساحه ما تكفى بتنتقل العناصر زي الصوره لسطر جديد  */
+ }
 #rightMain>h1>span{
     color: plum
 }
@@ -54,8 +75,10 @@
     width: 300px;
 }
 #rightMain{
-    width: 600px; 
+    width: 600px;  
     /* حتى ازبط الكلام وما يكون ماخد مساحه كبيره */
+    padding: 20px;
+    /* حتى الكلام ما يلمس الحواف لما الشاشة تصغر */
 }
 .yummyimage{
     position: relative; 
@@ -71,50 +94,74 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     font-size: 15px;
 }
-#ingredient{
+#ingredient {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;  
-    /*انزل الديف لتحت  */
+    margin-top: 50px;
+    padding: 20px; 
+    /* حتى ما المس حواف البودي لما الشاشة تصغر */
 }
-.items{
-    text-align: center; 
-    /* اوسط الصور والكلام داخل الديف */
+
+.items {
+    text-align: center;
 }
-.items>h1{
+
+.items > h1 {
     font-size: 36px;
-    color:black;
-    background-color: plum; 
+    color: black;
+    background-color: plum;
     padding: 15px 30px;
     border: 2px solid white;
     border-radius: 12px;
     margin-bottom: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-.types{
+
+.types {
     display: flex;
+    flex-wrap: wrap; 
+    /* لما تصغر الشاشة العناصر وهو النكهات ينزلو اسطر جديده ومتعدده */
+    gap: 20px; 
 }
-.type{
+
+.type {
     background-color: white;
     border-radius: 16px;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    padding: 30px 20px;  
-    width: 180px; 
-    margin: 10px;
+    padding: 30px 20px;
+    width: 180px;
+    transition: all 0.3s ease; 
 }
-.type>img{
+
+.type > img {
     border-radius: 100%;
+    width: 100px;
 }
-.type>p{
+
+.type > p {
     margin-top: 15px;
 }
-.type:hover{
+
+.type:hover {
     background-color: plum;
 }
 
+
+@media (max-width: 480px) {
+    .items > h1 {
+        font-size: 24px;
+        padding: 10px 20px;
+    }
+    
+    .type {
+        width: calc(50% - 15px);
+        padding: 15px 10px;
+    }
+}
 #footer{
     display: flex;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 .LeftFooter>ul{
@@ -129,11 +176,12 @@
 }
 .social{
     display: flex;
+    flex-direction: column;
     position: relative;
 }
 .socialIcon{
-    display: flex;
-    
+    display: flex;    
+    flex-wrap: wrap;
 }
 .greyscreen{
     background-color: lightgray;
@@ -148,12 +196,30 @@
 .copyright{
     position: absolute;
     left: 45%;
+    top: 20px;
     color: grey;
+}
+@media (max-width: 480px) {
+    .socialIcon {
+        gap: 5px;
+    }
+    
+    .greyscreen {
+        width: 35px;
+        height: 35px;
+    }
+    .LeftFooter > ul > li {
+        font-size: 12px;
+       
+    }
+    .copyright{
+        margin-top: 50px;
+    }
 }
 #mobileMenu {
     display: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
     .desktopMenu {
         display: none;
     }
@@ -164,5 +230,4 @@
     .dropdown {
         margin-left: 10px;
     }
-
 }
