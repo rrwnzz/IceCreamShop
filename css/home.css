@@ -55,7 +55,8 @@
     align-items: center;
     /* to center the div */
     flex-wrap: wrap; 
-    /* لما الشاشة تصغر والمساحه ما تكفى بتنتقل العناصر زي الصوره لسطر جديد  */
+    /* لما الشاشة تصغر والمساحه ما تكفى بتنتقل العناصر زي الصوره لسطر جديد وهيك بضل شكل البيج مرتب */
+    /* using felx warp for makeing the main responsive */
  }
 #rightMain>h1>span{
     color: plum
@@ -79,7 +80,7 @@
     width: 600px;  
     /* حتى ازبط الكلام وما يكون ماخد مساحه كبيره */
     padding: 20px;
-    /* حتى الكلام ما يلمس الحواف لما الشاشة تصغر */
+    /*  حتى الكلام ما يلمس الحواف لما الشاشة تصغر وتصير شاشة تلفون*/
 }
 .yummyimage{
     position: relative; 
@@ -122,7 +123,7 @@
 .types {
     display: flex;
     flex-wrap: wrap; 
-    /* لما تصغر الشاشة العناصر وهو النكهات ينزلو اسطر جديده ومتعدده */
+    /* لما تصغر الشاشة العناصر زي النكهات ينزلو اسطر جديده ومتعدده وهيك بضل شكل البيج مرتب*/
     gap: 20px; 
 }
 
@@ -132,7 +133,6 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     padding: 30px 20px;
     width: 180px;
-    transition: all 0.3s ease; 
 }
 
 .type > img {
@@ -217,18 +217,5 @@
         margin-top: 50px;
     }
 }
-#mobileMenu {
-    display: none;
-}
-@media screen and (max-width: 768) {
-    .desktopMenu {
-        display: none;
-    }
 
-    #mobileMenu {
-        display: block;
-    }
-    .dropdown {
-        margin-left: 10px;
-    }
-}
+
