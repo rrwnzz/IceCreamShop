@@ -46,6 +46,9 @@
     .dropdown-item {
         display: block;
     }
+    #mobileMenu{
+        display: block
+    }
 
 }
 
