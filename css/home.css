@@ -34,9 +34,9 @@
     margin: 5px;
 }
 
-#mobileMenu {
+#mobileMenu { 
     display: none;
-}
+} 
 
 @media screen and (max-width: 468px) {
     .desktopMenu {
@@ -47,7 +47,8 @@
         display: block;
     }
     #mobileMenu{
-        display: block
+        display: block;
+        margin: 10px;
     }
 
 }

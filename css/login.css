@@ -1,30 +1,65 @@
-#loginForm {
+body {
+    background-image: url(https://i.pinimg.com/736x/b1/45/ca/b145ca1cca5ca0f279f55d1132c63d34.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px; 
-    gap: 80px;
-    background-color: white;
-    padding: 40px;   
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#loginForm {
+  background: white;
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 #loginForm > img {
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
-    padding: 20px;  
-    border-radius: 50%; 
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  background: white;
+  margin-left: 100px;
 }
 
 #loginData {
-    display: grid; 
-    gap: 20px;  
+  display: grid;
+  gap: 20px;
+  width: 300px;
 }
-#loginData>label{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+#loginData> input {
+  padding: 12px 15px;
+  border: 1px solid rgb(244, 235, 235);
+  border-radius: 10px;
+  font-size: 14px;
 }
-#loginData>input {
-    padding: 15px;  
-    border-radius: 10px; 
-    border: 2px solid whitesmoke;  
-    font-size: 16px;
+
+#loginData> button {
+  padding: 12px 20px;
+  background-color: rgb(233, 192, 192);
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 10px;
 }
+
+#loginData>button:hover {
+  background-color: #0056b3;
+}
+#icones{
+    display: flex;
+}
+#pinkicone{
+    background-color:  rgb(233, 192, 192);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-top: 30px;
+    margin-left: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
