@@ -107,10 +107,11 @@
 }
 #RightReviews>button{
     position:absolute;
-    border-radius: 20px;
+    border-radius: 10px;
+    color: black;
+    background-color: #f8e6f3;
     padding: 15px;
     border:2px solid plum;
-    background-color: white;
     left: 50px;
     top: 220px;
     font-size: 15px;
