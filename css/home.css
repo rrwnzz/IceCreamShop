@@ -6,10 +6,6 @@
     background-color: white;
 }
 
-#navBar > img {
-    width: 75px;
-}
-
 .desktopMenu {
     display: flex;
     list-style: none;
@@ -160,7 +156,6 @@
     }
     
     .type {
-        width: calc(50% - 15px);
         padding: 15px 10px;
     }
 }
